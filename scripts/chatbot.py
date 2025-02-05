@@ -14,7 +14,11 @@ def generate_chatbot_response(report):
     """
     
     # Initialize Groq client
+<<<<<<< Updated upstream
     client = groq.Client(api_key="your_groq_api_key")
+=======
+    client = groq.Client(api_key="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")
+>>>>>>> Stashed changes
     
     # Generate response
     response = client.generate(prompt)

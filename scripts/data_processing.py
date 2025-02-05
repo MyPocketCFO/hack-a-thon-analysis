@@ -21,6 +21,7 @@ def load_data(file_name):
 
 def calculate_metrics(df):
     # Calculate Gross Profit if the required rows exist
+<<<<<<< Updated upstream
     if 'Gross Profit' in df.columns and 'Total Income' in df.columns:
         df['Gross Margin'] = (df['Gross Profit'] / df['Total Income']) * 100
     else:
@@ -31,6 +32,12 @@ def calculate_metrics(df):
         df['Net Profit Margin'] = (df['Net Profit'] / df['Total Income']) * 100
     else:
         print("Warning: 'Net Profit' or 'Total Income' column not found. Skipping Net Profit Margin calculation.")
+=======
+    if 'Gross Profit' in df.columns:
+        df['Gross Margin'] = (df['Gross Profit'] / df['Total Income']) * 100
+    else:
+        print("Warning: 'Gross Profit' column not found. Skipping Gross Margin calculation.")
+>>>>>>> Stashed changes
     
     # Add more metrics as needed
     return df
