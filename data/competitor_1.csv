@@ -1,0 +1,61 @@
+Name,Jan 2024,Feb 2024,Mar 2024,Apr 2024,May 2024,Jun 2024,Jul 2024,Aug 2024,Sep 2024,Oct 2024,Nov 2024,Dec 2024,Total
+Total Income,57971.4,59656.0,301119.89,43720.92,54275.12,59460.56,100028.57,56855.34,81356.51,112620.3,81460.46,55755.33,1064280.39
+    Income.Income.Sales Of Product Income.Chargebacks,-424.24,-78.43,-1351.05,-30.67,-110.06,-8.48,-15.05,-169.44,-161.57,-58.51,-82.69,-106.47,-2596.65
+    Income.Income.Sales Of Product Income.Sales,58395.64,59734.43,302470.93,43751.58,54385.18,59469.04,100043.61,57024.77,81518.08,112678.81,81543.16,55861.8,1066877.04
+        Income.Income.Discounts Refunds Given.Discounts and Refunds,-1007.1,-507.2,-1099.03,-491.97,-50.68,76.18,-524.16,-4706.91,-3022.92,-8818.66,-13534.31,-9541.0,-43227.75
+        Income.Income.Sales Of Product Income.Sales of Product Income - Shopify,22592.27,23832.28,14292.94,18908.08,17802.66,19648.73,29184.16,20947.54,17589.45,36392.38,39042.38,29363.09,289595.97
+        Income.Income.Sales Of Product Income.Sales of Product Income - Amazon Seller Central,16872.39,15292.12,15902.23,13176.26,8290.34,13796.66,21194.75,16078.48,14645.63,23691.54,13664.59,13542.25,186147.24
+        Income.Income.Sales Of Product Income.Sales of Product Income - Invoices and cash,18984.17,19562.75,271859.21,10411.54,27079.57,24671.41,48789.54,23133.77,51327.57,60034.5,41700.83,21520.09,619074.94
+        Income.Income.Sales Of Product Income.Sales of Product Income - Faire,953.91,1554.48,1515.58,1747.68,1263.29,1276.06,1399.31,1571.89,978.35,1379.05,669.67,977.38,15286.64
+Total Cost Of Goods Sold,-24967.77,-25427.55,-148162.78,-18272.99,-24106.33,-25684.59,-44259.16,-26452.25,-38403.44,-53540.86,-41215.37,-27372.26,-497865.36
+    Expense.Cost of Goods Sold.Supplies Materials COGS.Cost of Goods Sold,-24967.77,-25427.55,-148162.78,-18272.99,-24106.33,-25684.59,-44259.16,-26452.25,-38403.44,-53540.86,-41215.37,-27372.26,-497865.36
+        Expense.Cost of Goods Sold.Supplies Materials COGS.Cost of goods sold - Shopify,-8585.51,-9056.56,-5431.53,-7185.33,-6765.29,-7466.84,-11090.99,-7960.17,-6684.0,-13829.61,-14836.57,-10985.86,-109878.24
+        Expense.Cost of Goods Sold.Supplies Materials COGS.Cost of goods sold - Amazon Seller Central,-6413.19,-5812.32,-6043.81,-5008.0,-3169.55,-5243.94,-8073.66,-6139.17,-5566.39,-9004.44,-5193.52,-5137.65,-70805.63
+        Expense.Cost of Goods Sold.Supplies Materials COGS.Cost of goods sold - Invoices and cash,-9492.09,-9781.38,-135929.61,-5205.78,-13539.8,-12335.72,-24394.8,-11566.89,-25663.81,-30017.25,-20850.42,-10760.05,-309537.61
+        Expense.Cost of Goods Sold.Supplies Materials COGS.Cost of goods sold - Sales of Product Income - Faire,-476.98,-777.29,-757.83,-873.9,-631.7,-638.08,-699.71,-786.02,-489.24,-689.55,-334.87,-488.71,-7643.88
+Gross Profit,33003.62,34228.45,152957.1,25447.92,30168.79,33775.98,55769.41,30403.09,42953.07,59079.44,40245.09,28383.08,566415.03
+Total Expenses,-60886.06,-50193.59,-42144.42,-38358.94,-48031.7,-45031.46,-55452.03,-75580.03,-61337.3,-64313.04,-60870.18,-59755.67,-661954.41
+    Expense.Expense.Cost Of Labor.Contract labor,0.0,0.0,-3054.34,-6108.68,0.0,-3054.34,0.0,0.0,0.0,0.0,0.0,0.0,-12217.37
+    Expense.Expense.Advertising Promotional.Advertising & Selling Expense,-39300.01,-27561.57,-13440.6,-15046.09,-19991.43,-16102.21,-29268.43,-39986.61,-27317.96,-28811.39,-28004.21,-27222.47,-312052.99
+        Expense.Expense.Advertising Promotional.Selling expenses,-8650.37,-10999.28,-7411.11,-7407.96,-8513.03,-8120.45,-13834.24,-14003.81,-9111.66,-19752.32,-15647.54,-17476.71,-140928.47
+            Expense.Expense.Other Selling Expenses.Chargeback - Invoices,-78.37,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-69.06,0.0,0.0,0.0,-147.43
+            Expense.Expense.Shipping Freight Delivery.Shipping and postage,-7901.9,-10320.53,-7009.44,-6870.96,-8013.72,-7550.3,-13029.22,-13408.0,-8542.17,-18871.39,-14517.24,-16607.17,-132642.04
+            Expense.Expense.Other Selling Expenses.Platform Fee - Shopify,-670.1,-678.75,-401.66,-537.0,-499.31,-570.15,-805.02,-595.8,-500.43,-880.93,-1130.3,-869.53,-8139.0
+        Expense.Expense.Advertising Promotional.Advertising & Marketing,-30649.64,-16562.29,-6029.5,-7638.14,-11478.4,-7981.76,-15434.19,-25982.8,-18206.29,-9059.07,-12356.66,-9745.76,-171124.52
+            Expense.Expense.Advertising Promotional.Other Advertising & Marketing,-29059.16,-11794.06,-3077.0,-6108.68,-5416.37,-7147.16,-4072.46,-11301.06,0.0,-6230.86,-4642.6,0.0,-88849.41
+            Expense.Expense.Advertising Promotional.Web ads,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-1964.03,-5044.6,-7008.63
+            Expense.Expense.Advertising Promotional.Trade spend,-894.3,-4629.05,-2409.36,-983.81,-5210.11,-697.23,-9899.17,-14533.53,-5530.78,-2679.59,-1981.05,-3766.09,-53214.06
+    Expense.Expense.Office General Administrative Expenses.General & Administrative expenses,-21586.05,-22632.02,-25649.47,-17204.16,-28040.26,-25874.9,-26183.6,-35593.42,-34019.35,-35501.64,-32865.97,-32533.2,-337684.06
+        Expense.Expense.Insurance.Insurance,-325.24,-325.24,-325.24,0.0,-371.05,-23.82,-690.18,-671.25,0.0,-761.22,-360.3,-387.17,-4240.71
+        Expense.Expense.Entertainment Meals.Meals & Entertainment,-100.15,-257.25,-563.59,-31.64,-169.77,-88.48,-59.46,0.0,-103.07,-298.93,-156.47,-162.03,-1990.84
+        Expense.Expense.Other Business Expenses.Other business expenses,-464.44,-576.7,-105.0,-100.21,-493.53,-687.55,-204.03,-16.58,-1219.79,-1050.07,-91.61,-347.23,-5356.73
+        Expense.Expense.Dues Subscriptions.Software & Apps,-4119.02,-1273.67,-1935.08,-1466.3,-3253.0,-1890.61,-1334.1,-998.25,-1365.83,-1966.4,-1238.7,-1236.45,-22077.41
+            Expense.Expense.Dues Subscriptions.Other Software & Apps,-67.99,0.0,-335.98,-549.78,-172.3,-943.59,-552.11,-344.57,-703.12,-463.5,-421.56,-631.44,-5185.94
+        Expense.Expense.Payroll Expenses.Payroll Expense,-2138.04,-2672.55,-3207.06,-3207.06,-3207.06,-3207.06,-3207.06,-3207.06,-10867.47,-12098.59,-11800.48,-6992.82,-65812.3
+        Expense.Expense.Bank Charges.Bank Fees & Service Charges,-411.03,13.92,-142.89,-31.09,-49.93,-106.14,-39.19,-680.08,-61.27,-51.75,-190.29,-162.8,-1912.55
+        Expense.Expense.Dues Subscriptions.Dues & Subscriptions,-1761.04,-1010.7,-2255.58,-2363.27,-2198.98,-161.26,-1294.07,-649.95,-211.61,-679.88,-836.81,-1953.01,-15376.15
+        Expense.Expense.Interest Paid.Interest Expense,-187.88,-273.11,-266.65,-311.43,-522.96,-607.12,-772.03,-759.55,-669.58,-497.17,-257.76,-81.07,-5206.31
+        Expense.Expense.Cost Of Labor.Contract labor,-8149.82,-9476.44,-10160.19,-3438.82,-7449.43,-8058.79,-11158.51,-14894.33,-13381.63,-12800.58,-11347.67,-10679.01,-120995.22
+        Expense.Expense.Office General Administrative Expenses.Software and apps,-496.03,-488.69,-488.69,-488.69,0.0,0.0,-115.45,0.0,-1121.23,-933.1,-758.06,-1806.4,-6696.34
+        Expense.Expense.Rent Or Lease Of Buildings.Rent,0.0,-880.87,0.0,0.0,-2642.62,0.0,-64.26,-8808.72,0.0,0.0,-1761.74,-1685.1,-15843.31
+        Expense.Expense.Legal Professional Fees.Professional Services,0.0,0.0,-3554.64,-1221.74,-1221.74,-3054.34,0.0,0.0,0.0,0.0,0.0,0.0,-9052.46
+        Expense.Expense.Other Business Expenses.Other G & A,-3433.38,-5410.72,-2644.86,-4543.9,-6460.19,-7989.72,-7245.25,-4907.65,-5017.87,-4363.95,-4066.09,-7040.12,-63123.7
+            Expense.Expense.Taxes Paid.Business licenses and taxes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-518.02,0.0,0.0,-518.02
+            Expense.Expense.Other Miscellaneous Service Cost.Uncategorized Expense,0.0,0.0,0.0,-145.89,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-1021.33,-1167.22
+            Expense.Expense.Other Business Expenses.General business expenses,-47.2,-59.87,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-107.07
+            Expense.Expense.Entertainment Meals.Meals and Entertainment,0.0,0.0,0.0,0.0,-603.92,-936.18,-199.42,-454.63,-593.87,197.13,-350.44,-920.02,-3861.35
+            Expense.Expense.Office General Administrative Expenses.Office expenses,-2308.09,-1745.93,-1746.86,-2969.13,-2829.96,-1758.48,-2692.14,-2661.44,-2045.61,-2499.4,-2090.95,-2092.65,-27440.65
+            Expense.Expense.Rent Or Lease Of Buildings.Utilities,0.0,-58.04,-114.86,-75.92,-82.42,-82.42,-82.42,-82.42,-82.42,-82.42,-82.42,-82.42,-908.22
+            Expense.Expense.Supplies Materials.Supplies,0.0,-17.12,0.0,0.0,0.0,-253.05,-600.29,-202.25,-231.31,-480.04,0.0,0.0,-1784.07
+            Expense.Expense.Travel.Travel,-1078.09,-3529.75,-783.14,-1352.96,-2943.9,-4959.58,-3670.96,-1506.91,-2064.65,-981.19,-1542.28,-2923.7,-27337.11
+Net Operating Profit,-27882.43,-15965.15,110812.68,-12911.01,-17862.91,-11255.48,317.38,-45176.94,-18384.23,-5233.6,-20625.09,-31372.59,-95539.38
+Total Other Income,0.0,76.86,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,76.86
+    Income.Other Income.Other Miscellaneous Income.Other Income,0.0,76.86,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,76.86
+        Income.Other Income.Other Miscellaneous Income.Other Miscellaneous Income,0.0,76.86,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,76.86
+Total Other Expenses,-1506.25,-495.82,-543.7,-553.2,-495.82,-4515.3,-495.82,-516.51,-791.41,-495.82,-539.37,-916.64,-11865.69
+    Expense.Other Expense.Other Miscellaneous Expense.Other Expense,-1506.25,-495.82,-543.7,-553.2,-495.82,-4515.3,-495.82,-516.51,-791.41,-495.82,-539.37,-916.64,-11865.69
+        Expense.Other Expense.Other Miscellaneous Expense.Contributions to Charities,-971.28,0.0,0.0,0.0,0.0,-2894.71,0.0,0.0,-213.8,0.0,0.0,0.0,-4079.79
+        Expense.Other Expense.Other Miscellaneous Expense.Other Miscellaneous Expense,-39.14,0.0,-61.62,-43.63,0.0,-1124.77,0.0,-20.69,-81.78,0.0,-43.55,-916.64,-2331.84
+        Expense.Other Expense.Amortization.Amortization expenses,-495.82,-495.82,-482.08,-509.57,-495.82,-495.82,-495.82,-495.82,-495.82,-495.82,-495.82,0.0,-5454.06
+Net Other Income,-1506.25,-418.96,-543.7,-553.2,-495.82,-4515.3,-495.82,-516.51,-791.41,-495.82,-539.37,-916.64,-11788.83
+Net Profit,-29388.68,-16384.11,110268.98,-13464.21,-18358.74,-15770.78,-178.45,-45693.45,-19175.64,-5729.42,-21164.46,-32289.24,-107328.21
