@@ -24,6 +24,7 @@ def calculate_metrics(df):
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     if 'Gross Profit' in df.columns and 'Total Income' in df.columns:
         df['Gross Margin'] = (df['Gross Profit'] / df['Total Income']) * 100
     else:
@@ -39,12 +40,17 @@ def calculate_metrics(df):
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     if 'Gross Profit' in df.columns:
         df['Gross Margin'] = (df['Gross Profit'] / df['Total Income']) * 100
     else:
         print("Warning: 'Gross Profit' column not found. Skipping Gross Margin calculation.")
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
