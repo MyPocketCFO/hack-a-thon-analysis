@@ -14,6 +14,7 @@ def plot_metrics(main_company, competitors):
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     # Example: Plot Net Profit Margin comparison
     plt.figure(figsize=(10, 6))
     sns.barplot(x=['Main Company', 'Competitor 1', 'Competitor 2', 'Competitor 3', 'Competitor 4', 'Competitor 5'],
@@ -22,6 +23,8 @@ def plot_metrics(main_company, competitors):
     plt.ylabel('Net Profit Margin (%)')
     plt.show()
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
