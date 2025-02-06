@@ -11,12 +11,6 @@ def generate_analysis_report(main_company, competitors):
     main_gross_margin = main_company['Gross Margin'].mean()
     report['Main Company Gross Margin'] = main_gross_margin
     
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     # Example: Calculate average Net Profit Margin for competitors
     avg_net_profit_margin = sum(comp['Net Profit Margin'].mean() for comp in competitors) / len(competitors)
     report['Average Competitor Net Profit Margin'] = avg_net_profit_margin
@@ -25,18 +19,6 @@ def generate_analysis_report(main_company, competitors):
     main_net_profit_margin = main_company['Net Profit Margin'].mean()
     report['Main Company Net Profit Margin'] = main_net_profit_margin
     
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     # Add more comparisons and metrics as needed
     
     return report
