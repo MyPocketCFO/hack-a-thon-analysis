@@ -124,6 +124,28 @@ st.markdown(f"""
         color: white !important;
     }}
 
+    /* Market Report Styling */
+    .market-report {{
+        background-color: #f9f9f9;
+        border-left: 5px solid {primary_color};
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        font-family: 'Roboto', sans-serif;
+    }}
+    .market-report h4 {{
+        color: #4a4a4a;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 600;
+    }}
+    .market-report p {{
+        line-height: 1.6;
+        color: {text_color};
+        font-size: 16px;
+    }}
+
     </style>
     """, unsafe_allow_html=True)
 
@@ -186,8 +208,12 @@ with tab1:
         st.image(overview_image, use_container_width=True)
     
     if st.session_state.market_report:
-        st.subheader("Market Report")
-        st.markdown(f'<p class="market-insights">{st.session_state.market_report}</p>', unsafe_allow_html=True)
+        st.markdown("""
+        <div class="market-report">
+            <h4>Market Report</h4>
+            <p>{}</p>
+        </div>
+        """.format(st.session_state.market_report), unsafe_allow_html=True)
 
 with tab2:
     col1, col2 = st.columns([3, 1])
@@ -214,7 +240,7 @@ with tab2:
                 company_1_statement_content = f.read()
             
             file_paths_companies_2_to_9 = [
-                'data/synthetic_data_4.csv',
+                'data/synthetic_data_1.csv',
                 'data/synthetic_data_5.csv',
                 'data/synthetic_data_6.csv',
             ]

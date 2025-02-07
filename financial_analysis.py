@@ -83,15 +83,15 @@ def calculate_averages_using_ai(documents, company_name):
     Income Statements:
     {documents}
 
-    These industry averages should be calculated using data from synthetic_data_4.csv, synthetic_data_5.csv, and synthetic_data_6.csv files only.
+    These industry averages should be calculated using data from synthetic_data_1.csv, synthetic_data_5.csv, and synthetic_data_6.csv files only.
 
-    Provide the averages as "Industry Averages" without mentioning specific companies. Format the report professionally, using markdown tables where appropriate. Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be extremely precise and consistent in your calculations, showing your work for each metric."""
+    Provide the averages as "Industry Averages" without mentioning specific companies. Format the report professionally, using markdown tables where appropriate. Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be extremely precise and consistent in your calculations, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"""
 
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "system",
-                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven industry averages for {company_name}'s sector. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations, showing your work for each metric."
+                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven industry averages for {company_name}'s sector. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"
             },
             {
                 "role": "user",
@@ -107,7 +107,9 @@ def calculate_averages_using_ai(documents, company_name):
     industry_averages = re.sub(r'<think>.*?</think>', '', industry_averages, flags=re.DOTALL)
 
     industry_averages_cache[company_name] = industry_averages
+
     return industry_averages
+
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(3))
 def analyze_company_standing(company_statement, industry_averages, market_report, company_name):
@@ -139,13 +141,13 @@ def analyze_company_standing(company_statement, industry_averages, market_report
     Market Report: {market_report}
 
     Format your response using markdown, with appropriate headers (h4 or smaller) and bullet points. Separate each section with a horizontal rule (---).
-    Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be specific and data-driven in your analysis. Maintain consistency and accuracy in all calculations and comparisons. Show your work for each metric calculation."""
+    Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be specific and data-driven in your analysis. Maintain consistency and accuracy in all calculations and comparisons. Show your work for each metric calculation. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"""
 
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "system",
-                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide an accurate, data-driven analysis of {company_name}'s performance compared to industry benchmarks. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations and comparisons, showing your work for each metric."
+                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide an accurate, data-driven analysis of {company_name}'s performance compared to industry benchmarks. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations and comparisons, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"
             },
             {
                 "role": "user",
@@ -163,45 +165,57 @@ def analyze_company_standing(company_statement, industry_averages, market_report
     return analysis
 
 def generate_visualizations():
-    df = pd.read_csv("data/original_data.csv", header=0)
-    df = df.drop(columns=["Total"])
-
-    revenue = df[df["Name"] == "Total Income"].set_index("Name").T
-    revenue.columns = ["Revenue"]
-    revenue.index = pd.to_datetime(revenue.index)
-
-    fig1, ax1 = plt.subplots(figsize=(10, 5))
-    ax1.plot(revenue.index, revenue["Revenue"], marker='o', linestyle='-', label="Revenue")
-    ax1.set_xlabel("Months")
-    ax1.set_ylabel("Revenue ($)")
-    ax1.set_title("Monthly Revenue Trend")
-    ax1.tick_params(axis='x', rotation=45)
-    ax1.legend()
-    ax1.grid()
-
-    quarterly_revenue = revenue.resample('Q').sum()
-    
-    fig2, ax2 = plt.subplots(figsize=(8, 5))
-    ax2.plot(quarterly_revenue.index.strftime('%Y-Q%q'), quarterly_revenue["Revenue"], marker='o', linestyle='-', label="Quarterly Revenue")
-    ax2.set_xlabel("Quarter")
-    ax2.set_ylabel("Revenue ($)")
-    ax2.set_title("Quarterly Revenue Trend")
-    ax2.legend()
-    ax2.grid()
-
-    gross_profit = df[df["Name"] == "Gross Profit"].set_index("Name").T
-    gross_profit.columns = ["Gross Profit"]
-    gross_profit.index = pd.to_datetime(gross_profit.index)
-
-    fig3, ax3 = plt.subplots(figsize=(10, 5))
-    ax3.bar(gross_profit.index.strftime('%Y-%m'), gross_profit["Gross Profit"], color='skyblue')
-    ax3.set_xlabel("Months")
-    ax3.set_ylabel("Gross Profit ($)")
-    ax3.set_title("Monthly Gross Profit")
-    ax3.tick_params(axis='x', rotation=45)
-    ax3.grid(axis="y")
-
-    return [fig1, fig2, fig3]
+    # Load main revenue data
+    df = pd.read_csv("data/original_data.csv")
+    # Extract revenue for 'Total Income'
+    revenue = df[df["Name"] == "Total Income"].set_index("Name")
+    # Define monthly columns
+    monthly_columns = [
+        "Jan 2024", "Feb 2024", "Mar 2024",
+        "Apr 2024", "May 2024", "Jun 2024",
+        "Jul 2024", "Aug 2024", "Sep 2024",
+        "Oct 2024", "Nov 2024", "Dec 2024"
+    ]
+    revenue = revenue[monthly_columns]
+    # Define quarters
+    quarters = {
+        "Q1 2024": ["Jan 2024", "Feb 2024", "Mar 2024"],
+        "Q2 2024": ["Apr 2024", "May 2024", "Jun 2024"],
+        "Q3 2024": ["Jul 2024", "Aug 2024", "Sep 2024"],
+        "Q4 2024": ["Oct 2024", "Nov 2024", "Dec 2024"]
+    }
+    # Calculate quarterly revenue
+    quarterly_revenue = {q: revenue[months].sum(axis=1).values[0] for q, months in quarters.items()}
+    # Convert to DataFrame
+    quarterly_df = pd.DataFrame(list(quarterly_revenue.items()), columns=["Quarter", "Revenue"])
+    # Load industry benchmark data from three CSV files
+    industry_files = ["data/synthetic_data_1.csv", "data/synthetic_data_5.csv", "data/synthetic_data_6.csv"]
+    # Initialize empty DataFrame for industry averages
+    industry_data = []
+    for file in industry_files:
+        industry_df = pd.read_csv(file)
+        industry_revenue = industry_df[industry_df["Name"] == "Total Income"].set_index("Name")
+        industry_revenue = industry_revenue[monthly_columns]
+        # Calculate industry quarterly revenue
+        industry_quarterly = {q: industry_revenue[months].sum(axis=1).values[0] for q, months in quarters.items()}
+        industry_data.append(industry_quarterly)
+    # Compute the industry benchmark as the average across the three files
+    industry_avg = {q: sum(d[q] for d in industry_data) / len(industry_data) for q in quarters.keys()}
+    # Convert industry benchmark to DataFrame
+    industry_df = pd.DataFrame(list(industry_avg.items()), columns=["Quarter", "Industry Avg"])
+    # Merge both DataFrames
+    final_df = quarterly_df.merge(industry_df, on="Quarter")
+    # Plot Quarterly Revenue
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(final_df["Quarter"], final_df["Revenue"], marker='o', linestyle='-', label="Company Revenue", color='b')
+    ax.plot(final_df["Quarter"], final_df["Industry Avg"], marker='s', linestyle='--', label="Industry Avg", color='r')
+    # Formatting
+    ax.set_xlabel("Quarter")
+    ax.set_ylabel("Revenue")
+    ax.set_title("Quarterly Revenue vs. Industry Benchmark")
+    ax.legend()
+    ax.grid()
+    return [fig]
 
 def main():
     st.title("Company Financial Analysis")
@@ -215,7 +229,7 @@ def main():
 
         with st.spinner("Calculating industry averages..."):
             file_paths_companies_2_to_9 = [
-                'data/synthetic_data_4.csv',
+                'data/synthetic_data_1.csv',
                 'data/synthetic_data_5.csv',
                 'data/synthetic_data_6.csv',
             ]
