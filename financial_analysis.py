@@ -36,14 +36,14 @@ def generate_market_report_perplexity(company_name):
         "messages": [
             {
                 "role": "system",
-                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven insights for {company_name}. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign."
+                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven insights for {company_name}. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Do not make assumptions, instead call out clearly where you lack information or data."
             },
             {
                 "role": "user",
                 "content": prompt,
             }
         ],
-        "max_tokens": 2000,
+        "max_tokens": 3000,
         "temperature": 0.01,
         "top_p": 0.9,
     }
@@ -85,13 +85,21 @@ def calculate_averages_using_ai(documents, company_name):
 
     These industry averages should be calculated using data from synthetic_data_1.csv, synthetic_data_5.csv, and synthetic_data_6.csv files only.
 
+<<<<<<< HEAD
     Provide the averages as "Industry Averages" without mentioning specific companies. Format the report professionally, using markdown tables where appropriate. Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be extremely precise and consistent in your calculations, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"""
+=======
+    Provide the averages as "Industry Averages" without mentioning specific companies. Format the report professionally, using markdown tables where appropriate. Ensure all financial figures are in USD and use a dollar sign where applicable. Express all metrics as percentages where appropriate. Be extremely precise and consistent in your calculations, showing your work for each metric. """
+>>>>>>> 95ac8d80750926013ce5ce821c0d7d91435da7eb
 
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "system",
+<<<<<<< HEAD
                 "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven industry averages for {company_name}'s sector. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"
+=======
+                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide accurate, data-driven industry averages for {company_name}'s sector. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations, showing your work for each metric.  Do not make assumptions, instead call out clearly where you lack information or data."
+>>>>>>> 95ac8d80750926013ce5ce821c0d7d91435da7eb
             },
             {
                 "role": "user",
@@ -147,7 +155,11 @@ def analyze_company_standing(company_statement, industry_averages, market_report
         messages=[
             {
                 "role": "system",
+<<<<<<< HEAD
                 "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide an accurate, data-driven analysis of {company_name}'s performance compared to industry benchmarks. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations and comparisons, showing your work for each metric. DON'T MAKE STUFF UP. USE THE VALUES ONLY PROVIDED. MAKE SURE THE INDUSTRY AVERAGES AND THE COMPANY AVERAGES ARE DIFFERENT PLEASE!"
+=======
+                "content": f"You are a financial analyst specializing in the CPG sector and Food & Beverage vertical. Provide an accurate, data-driven analysis of {company_name}'s performance compared to industry benchmarks. Use proper Markdown format, avoiding h1, h2, and h3 headers. Separate sections with blank lines. Denote all amounts in USD with a dollar sign. Ensure consistency and precision in all calculations and comparisons, showing your work for each metric.  Do not make assumptions, instead call out clearly where you lack information or data."
+>>>>>>> 95ac8d80750926013ce5ce821c0d7d91435da7eb
             },
             {
                 "role": "user",
